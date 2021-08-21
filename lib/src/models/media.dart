@@ -9,9 +9,12 @@ class Media {
   String size;
 
   Media() {
-    url = "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
-    thumb = "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
-    icon = "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
+    url =
+        "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
+    thumb =
+        "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
+    icon =
+        "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
   }
 
   Media.fromJSON(Map<String, dynamic> jsonMap) {
@@ -23,9 +26,13 @@ class Media {
       icon = jsonMap['icon'];
       size = jsonMap['formated_size'];
     } catch (e) {
-      url = "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
-      thumb = "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
-      icon = "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
+      print('imagesssssss ${jsonMap['icon']}');
+      url =
+          "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
+      thumb =
+          "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
+      icon =
+          "${GlobalConfiguration().getValue('base_url')}images/image_default.png";
       print(e);
     }
   }
